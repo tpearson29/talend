@@ -85,6 +85,7 @@
       <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="tLogCatcher_1"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" label="logcatcher" name="tLogCatcher_1">
         <column comment="" key="false" length="19" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
@@ -230,7 +231,7 @@
       <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
       <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
       <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
-      <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;logcatcher&quot;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" label="logcatcher" name="tMysqlOutput_1">
         <column comment="" key="false" length="19" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
