@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.indicators.definition:IndicatorDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition="http://dataquality.indicators.definition" xmi:id="_OCCCEBl4EeGMPdtm417kpw" name="Bin Frequency Table" label="Bin Frequency Table">
-  <taggedValue xmi:id="_-WccYYqnEd-SocVM_rHvUg" tag="Description" value="counts the number of records for each distinct record aggregates data according to parameters"/>
+<dataquality.indicators.definition:IndicatorDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.indicators.definition="http://dataquality.indicators.definition" xmi:id="_hraIkTE2EeGvsfvHpG2Eqg" name="Date Frequency Table" label="Date Frequency Table">
+  <taggedValue xmi:id="_-WccYYqnEd-SocVM_rHvUg" tag="Description" value="counts the number of records for each distinct record aggregates data according to day"/>
   <taggedValue xmi:id="_-WccYoqnEd-SocVM_rHvUg" tag="Purpose" value="evaluates the most frequent records"/>
   <categories href="../../../.Talend.definition#_ccKuIRF2Ed2PKb6nEJEvhw"/>
   <sqlGenericExpression xmi:id="_-WccY4qnEd-SocVM_rHvUg" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="SQL"/>
