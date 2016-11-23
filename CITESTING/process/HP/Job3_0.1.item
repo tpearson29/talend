@@ -174,7 +174,7 @@
   </node>
   <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
-    <elementParameter field="TEXT" name="MESSAGE" value="projectName + &quot; &quot; + jobName + &quot; jobid &quot; + context.jobid + &quot;  ends at: &quot; + TalendDate.getCurrentDate()"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="projectName + &quot; &quot; + jobName + &quot; jobid &quot; + context.jobid + &quot;  ends at: &quot;"/>
     <elementParameter field="TEXT" name="CODE" value="4"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
