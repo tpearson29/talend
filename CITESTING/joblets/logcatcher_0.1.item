@@ -81,8 +81,6 @@
     </parameters>
     <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="96">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
-      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_BGQX8LG-Eea4UfMKu__hEA - logcatcher" show="false"/>
       <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
@@ -138,7 +136,7 @@
       <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
       <elementParameter field="TEXT" name="HOST" value="&quot;10.0.0.104&quot;"/>
       <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;amc&quot;"/>
       <elementParameter field="TEXT" name="USER" value="&quot;tisadmin&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" value="2Co3VkBZdOLKhMMdrOXKRg=="/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;logcatcher&quot;"/>
