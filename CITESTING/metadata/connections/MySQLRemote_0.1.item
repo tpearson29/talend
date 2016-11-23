@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_Hrg0sLG-Eea4UfMKu__hEA" name="MySQLRemote" id="_BGQX8LG-Eea4UfMKu__hEA" label="MySQLRemote" dataPackage="_HvA0oLG-Eea4UfMKu__hEA _HvA0obG-Eea4UfMKu__hEA _HvA0orG-Eea4UfMKu__hEA _NtcOA7HWEea2rPPmIFriYA _HvA0o7G-Eea4UfMKu__hEA _HvA0pLG-Eea4UfMKu__hEA _HvA0pbG-Eea4UfMKu__hEA _HvA0prG-Eea4UfMKu__hEA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://10.0.0.104:3306/?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="tisadmin" Password="V9ju2pYqYN1x+D2U7dViJw==" ServerName="10.0.0.104" DatasourceName="" FileFieldName="" SID="" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+  <TalendMetadata:DatabaseConnection xmi:id="_Hrg0sLG-Eea4UfMKu__hEA" name="MySQLRemote" id="_BGQX8LG-Eea4UfMKu__hEA" label="MySQLRemote" dataPackage="_NtcOA7HWEea2rPPmIFriYA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://10.0.0.104:3306/amc?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="tisadmin" Password="V9ju2pYqYN1x+D2U7dViJw==" ServerName="10.0.0.104" DatasourceName="" FileFieldName="" SID="amc" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
     <taggedValue xmi:id="_HrqlsLG-Eea4UfMKu__hEA" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_HtACcLG-Eea4UfMKu__hEA" tag="package filter" value=""/>
     <taggedValue xmi:id="_HtJzcLG-Eea4UfMKu__hEA" tag="Status" value=""/>
@@ -14,9 +14,6 @@
     <taggedValue xmi:id="_Ht5aUrG-Eea4UfMKu__hEA" tag="DB IdentifierQuoteString" value="`"/>
     <parameters xmi:id="_HrqlsbG-Eea4UfMKu__hEA" key="CONN_PARA_KEY_USERNAME" value="tisadmin"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0oLG-Eea4UfMKu__hEA" name="information_schema" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0obG-Eea4UfMKu__hEA" name="TMDM_DB_SYSTEM" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0orG-Eea4UfMKu__hEA" name="UpdateReport_MASTER" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_NtcOA7HWEea2rPPmIFriYA" name="amc" dataManager="_Hrg0sLG-Eea4UfMKu__hEA">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_NtcOCLHWEea2rPPmIFriYA" name="logcatcher" id="_NsP7MLHWEea2rPPmIFriYA" label="logcatcher" tableType="TABLE">
       <taggedValue xmi:id="_NtcOCbHWEea2rPPmIFriYA" tag="Comment" value=""/>
@@ -83,8 +80,4 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0o7G-Eea4UfMKu__hEA" name="crossreferencing_MASTER" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0pLG-Eea4UfMKu__hEA" name="mysql" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0pbG-Eea4UfMKu__hEA" name="talend_administrator621" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_HvA0prG-Eea4UfMKu__hEA" name="test" dataManager="_Hrg0sLG-Eea4UfMKu__hEA"/>
 </xmi:XMI>
