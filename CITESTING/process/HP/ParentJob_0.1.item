@@ -224,7 +224,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(((String)globalMap.get(&quot;row1.job&quot;)),true);&#xA;context.jobname_error=((String)globalMap.get(&quot;row1.job&quot;));&#xA;System.out.println(((String)globalMap.get(&quot;row1.message&quot;)));&#xA;System.out.println(((String)globalMap.get(&quot;row1.job&quot;)));&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if(((String)globalMap.get(&quot;row1.job&quot;)).equalsIgnoreCase(&quot;Job1&quot;)){&#xA;context.ejob1=true;&#xA;}else&#xA;if(((String)globalMap.get(&quot;row1.job&quot;)).equalsIgnoreCase(&quot;Job2&quot;){&#xA;context.ejob2=true;&#xA;}else&#xA;if(((String)globalMap.get(&quot;row1.job&quot;)).equalsIgnoreCase(&quot;Job3&quot;)){&#xA;context.ejob3=true;&#xA;}&#xA;&#xA;&#xA;context.jobname_error=((String)globalMap.get(&quot;row1.job&quot;));&#xA;System.out.println(((String)globalMap.get(&quot;row1.message&quot;)));&#xA;System.out.println(((String)globalMap.get(&quot;row1.job&quot;)));&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
@@ -464,18 +464,18 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSleep_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSleep_1" target="tRunJob_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;Job2&quot;))"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.ejob2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSleep_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSleep_1" target="tRunJob_2">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;Job3&quot;))"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.ejob3"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="UpdateSuccess_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaFlex_1" target="tRunJob_4">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!context.errorfound ||"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.ejob1"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaFlex_1" target="tSleep_1">
