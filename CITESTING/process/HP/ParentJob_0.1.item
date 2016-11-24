@@ -221,7 +221,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(((String)globalMap.get(&quot;row1.job&quot;)),true);&#xA;context.jobname_error=((String)globalMap.get(&quot;row1.job&quot;));&#xA;System.out.println(((String)globalMap.get(&quot;row1.message&quot;)));&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="globalMap.put(((String)globalMap.get(&quot;row1.job&quot;)),true);&#xA;context.jobname_error=((String)globalMap.get(&quot;row1.job&quot;));&#xA;System.out.println(((String)globalMap.get(&quot;row1.message&quot;)));&#xA;System.out.println(((String)globalMap.get(&quot;row1.job&quot;)));&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
@@ -405,7 +405,7 @@
   </node>
   <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_2" show="false"/>
-    <elementParameter field="TEXT" name="PAUSE" value="1"/>
+    <elementParameter field="TEXT" name="PAUSE" value="2"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSleep_2"/>
   </node>
