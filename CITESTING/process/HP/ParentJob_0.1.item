@@ -412,7 +412,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If5" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMysqlInput_1" target="tRunJob_4">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!context.errorfound"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!context.errorfound || ((Boolean)globalMap.get(&quot;Job1&quot;))"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If7" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tJavaFlex_1">
