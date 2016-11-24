@@ -475,7 +475,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaFlex_1" target="tRunJob_4">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.ejob1"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.ejob1 || !context.errorfound"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaFlex_1" target="tSleep_1">
